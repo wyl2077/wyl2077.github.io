@@ -132,6 +132,48 @@
               </td>
         </tr>
 
+        <tr onmouseout="dgtr_stop()" onmouseover="dgtr_start()">
+          <td style="padding:20px;width:25%;vertical-align:top">
+            <div class="one">
+              <div class="two" id='dgtr_image'><video  width=100% muted autoplay loop>
+              <source src="images/dgtr.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/dgtr.png' width=100%>
+            </div>
+            <script type="text/javascript">
+              function dgtr_start() {
+                document.getElementById('dgtr_image').style.opacity = "1";
+              }
+      
+              function dgtr_stop() {
+                document.getElementById('dgtr_image').style.opacity = "0";
+              }
+              dgtr_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+              <span class="papertitle">Dexterous Grasp Tranformer</span>
+            <br>
+            Guohao Xu*,
+            <strong>Yi-Lin Wei*</strong>,
+            <a href="https://zhengdian1.github.io/">Dian Zheng</a>,
+            <a href="https://dravenalg.github.io/">Xiao-Ming Wu</a>,
+            <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>
+            <br>
+            <em>CVPR</em>, 2024
+            <br>
+            <a href="https://arxiv.org/abs/2404.18135">arXiv page</a>
+            /
+            code
+            <p></p>
+            <p>
+            A novel discriminative framework for dexterous grasp generation by formulating it as a set prediction task.
+            </p>
+          </td>
+        </tr>
+
+
         <tr>
           <td style="padding: 20px; width:25%;vertical-align:top">
                 <img src="images/real2sim.png" alt="PontTuset" width="160" style="border-style: none">
@@ -187,46 +229,6 @@
           </td>
         </tr>
       
-        <tr onmouseout="dgtr_stop()" onmouseover="dgtr_start()">
-          <td style="padding:20px;width:25%;vertical-align:top">
-            <div class="one">
-              <div class="two" id='dgtr_image'><video  width=100% muted autoplay loop>
-              <source src="images/dgtr.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video></div>
-              <img src='images/dgtr.png' width=100%>
-            </div>
-            <script type="text/javascript">
-              function dgtr_start() {
-                document.getElementById('dgtr_image').style.opacity = "1";
-              }
-      
-              function dgtr_stop() {
-                document.getElementById('dgtr_image').style.opacity = "0";
-              }
-              dgtr_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:top">
-              <span class="papertitle">Dexterous Grasp Tranformer</span>
-            <br>
-            Guohao Xu*,
-            <strong>Yi-Lin Wei*</strong>,
-            <a href="https://zhengdian1.github.io/">Dian Zheng</a>,
-            <a href="https://dravenalg.github.io/">Xiao-Ming Wu</a>,
-            <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>
-            <br>
-            <em>CVPR</em>, 2024
-            <br>
-            <a href="https://arxiv.org/abs/2404.18135">arXiv page</a>
-            /
-            code
-            <p></p>
-            <p>
-            A novel discriminative framework for dexterous grasp generation by formulating it as a set prediction task.
-            </p>
-          </td>
-        </tr>
       
         <tr onmouseout="s2hg_stop()" onmouseover="s2hg_start()">
           <td style="padding:20px;width:25%;vertical-align:top">
