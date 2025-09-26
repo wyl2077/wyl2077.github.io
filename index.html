@@ -1,1 +1,554 @@
 
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Yi-Lin Wei</title>
+
+    <meta name="author" content="Yi-Lin Wei">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+  </head>
+
+          <head>
+              <meta charset="UTF-8">
+              <title>Indented H3 Title</title>
+              <style>
+                  /* 为h3标题添加一个字符的缩进 */
+                  .indented-h3 {
+                      text-indent: 1.5em; /* 1em 对应一个字符宽度 */
+                  }
+              </style>
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:60%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Yi-Lin Wei | 卫奕霖
+                </p>
+                <p>I am a third-year Ph.D. student in computer science at Sun Yat-Sen University, at <a href="http://47.242.234.245:8889/#/home">iSEE Lab</a>,
+                  advised by Prof. <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>. 
+                  Before that, I obtained my M.S. in control science and engineering from <a href="https://automation.seu.edu.cn/">Sortheast University </a>
+                  advised by Prof. <a href="https://automation.seu.edu.cn/nd/list.htm">Dan Niu</a>. 
+                  And I obotained B.S. in automation from <a href="http://www.ise.neu.edu.cn/">Northeastern University</a>. 
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:weiylin5@mail2.sysu.edu.cn">Email</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com.hk/citations?user=jZnH2HwAAAAJ&hl=zh-CN&oi=ao">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/wyl2077/">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:25%;max-width:25%">
+                <a href="images/yilinwei.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/yilinwei.png" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I'm interested in robotics AI, specially in dexterous grasp and manipulation. Additionally, I maintain a strong interest in and active engagement with humanoid robotics, MLLM-driven manipulation and dexterous hand hardware.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        
+          <!-- <h3 class="indented-h3">Dexterous Grasping and Manipulation</h3> -->
+
+          <!-- <tr>
+              <td style="padding:20px;width:32%;vertical-align:top">
+                  <div class="one">
+                      <div class="two" id='_image'>
+                          <img src='images/omnidex.png' width="150%">
+                      </div>
+                  </div>
+              </td> -->
+          <tr onmouseout="omnidex_stop()" onmouseover="omnidex_start()">
+            <td style="padding:20px;width:32%;vertical-align:top">
+              <div class="one">
+                <div class="two" id='omnidex_image'><video  width=150% muted autoplay loop>
+                <source src="images/omnidex.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/omnidex.png' width=150%>
+              </div>
+              <script type="text/javascript">
+                function omnidex_start() {
+                  document.getElementById('omnidex_image').style.opacity = "1";
+                }
+        
+                function omnidex_stop() {
+                  document.getElementById('omnidex_image').style.opacity = "0";
+                }
+                omnidex_stop()
+              </script>
+            </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                  <span class="papertitle">OmniDexGrasp: Generalizable Dexterous Grasping via Foundation Model and Force Feedback</span>
+                  <br>
+                  <strong>Yi-Lin Wei*</strong>,
+                  Zhexi Luo*,
+                  Yuhao Lin,
+                  <a href="https://frenkielm.github.io/">Mu Lin*</a>,
+                  Zhizhao Liang,
+                  Shuoyu Chen,
+                  <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>
+                  <br>
+                  <p></p>
+                  <em>under review</em>, 2025
+                  <br>
+                  arXiv page
+                  /
+                  project page
+                  /
+                  code
+                  <p></p>
+                  <p>
+                  A generalizable dexterous framework that achieves omni-capabilities in user prompting, dexterous embodiment, and grasping tasks.
+                  </p>
+              </td>
+          </tr>
+
+          
+          <tr>
+              <td style="padding:20px;width:32%;vertical-align:top">
+                  <div class="one">
+                      <div class="two" id='afforddex_image'>
+                          <img src='images/afforddex_image.png' width="150%">
+                      </div>
+                  </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                  <span class="papertitle">AffordDexGrasp: Open-set Language-guided Dexterous Grasp with Generalizable-Instructive Affordance</span>
+                  <br>
+                  <strong>Yi-Lin Wei*</strong>,
+                  <a href="https://frenkielm.github.io/">Mu Lin*</a>,,
+                  Yuhao Lin,
+                  <a href="https://jianjian-jiang.github.io/">Jian-Jian Jiang</a>,
+                  <a href="https://dravenalg.github.io/">Xiao-Ming Wu</a>,
+                  <a href="https://www.lingan.art/">Liang-An Zeng</a>,
+                  <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>
+                  <br>
+                  <p></p>
+                  <em>ICCV</em>, 2025
+                  <br>
+                  <a href="https://arxiv.org/pdf/2503.07360">arXiv page</a>
+                  /
+                  <a href="https://isee-laboratory.github.io/AffordDexGrasp/index.html">project page</a>
+                  /
+                  code
+                  <p></p>
+                  <p>
+                      Open-Set Language-guided dexterous grasp based on generalizable-instructive Affordance.
+                  </p>
+              </td>
+          </tr>
+
+
+
+          <tr onmouseout="dexgys_stop()" onmouseover="dexgys_start()">
+            <td style="padding:20px;width:32%;vertical-align:top">
+              <div class="one">
+                <div class="two" id='dexgys_image'><video  width=150% muted autoplay loop>
+                <source src="images/dexgys.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/dexgys.png' width=150%>
+              </div>
+              <script type="text/javascript">
+                function dexgys_start() {
+                  document.getElementById('dexgys_image').style.opacity = "1";
+                }
+        
+                function dexgys_stop() {
+                  document.getElementById('dexgys_image').style.opacity = "0";
+                }
+                dexgys_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+                <span class="papertitle">Grasp as You Say: Language-guided Dexterous Grasp Generation</span>
+              <br>
+              <strong>Yi-Lin Wei</strong>,
+              <a href="https://jianjian-jiang.github.io/">Jian-Jian Jiang</a>,
+              <a href="https://chengyi-xing.com/">Chengyi Xing</a>,
+              Xian-Tuo Tan,
+              <a href="https://dravenalg.github.io/">Xiao-Ming Wu</a>,
+              <a href="https://haolirobo.github.io/">Hao Li</a>,
+              <a href="https://profiles.stanford.edu/mark-cutkosky">Mark Cutkosky</a>,
+              <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>
+              <br>
+              <p></p>
+              <em>NeurIPS</em>, 2024
+              <br>
+              <a href="http://arxiv.org/abs/2405.19291">arXiv page</a>
+              /
+              <a href="https://isee-laboratory.github.io/DexGYS/">project page</a>
+              /
+              <a href="https://github.com/iSEE-Laboratory/Grasp-as-You-Say">code</a>
+              <p></p>
+              <p>
+              A novel task enables robots to perform dexterous grasping based on human commands. 
+              </p>
+                </td>
+        </tr>
+
+          <tr onmouseout="typetele_stop()" onmouseover="typetele_start()">
+            <td style="padding:20px;width:32%;vertical-align:top">
+              <div class="one">
+                <div class="two" id='typetele_image'><video  width=150% muted autoplay loop>
+                <source src="images/typetele.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/typetele.png' width=150%>
+              </div>
+              <script type="text/javascript">
+                function typetele_start() {
+                  document.getElementById('typetele_image').style.opacity = "1";
+                }
+        
+                function typetele_stop() {
+                  document.getElementById('typetele_image').style.opacity = "0";
+                }
+                typetele_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+                <span class="papertitle">TypeTele: Releasing Dexterity in Teleoperation by Dexterous Manipulation Types</span>
+              <br>
+              Yuhao Lin*,
+              <strong>Yi-Lin Wei*</strong>,
+              Haoran Liao,
+              Mu Lin,
+              <a href="https://frenkielm.github.io/">Mu Lin</a>,
+              <a href="https://chengyi-xing.com/">Chengyi Xing</a>,
+              <a href="https://haolirobo.github.io/">Hao Li</a>,
+              <a href="https://profiles.imperial.ac.uk/d.zhang17">Dandan Zhang</a>,
+              <a href="https://profiles.stanford.edu/mark-cutkosky">Mark Cutkosky</a>,
+              <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>              
+              <br>
+              <p></p>
+              <em>CoRL</em>, 2025
+              <br>
+              <a href="https://arxiv.org/abs/2507.01857">arXiv page</a>
+              /
+              <a href="https://isee-laboratory.github.io/TypeTele/">project page</a>
+              /
+              code
+              <p></p>
+              <p>
+              A novel task enables robots to perform dexterous grasping based on human commands. 
+              </p>
+                </td>
+        </tr>
+
+        <tr onmouseout="dgtr_stop()" onmouseover="dgtr_start()">
+          <td style="padding:20px;width:32%;vertical-align:top">
+            <div class="one">
+              <div class="two" id='dgtr_image'><video  width=150% muted autoplay loop>
+              <source src="images/dgtr.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/dgtr.png' width=150%>
+            </div>
+            <script type="text/javascript">
+              function dgtr_start() {
+                document.getElementById('dgtr_image').style.opacity = "1";
+              }
+      
+              function dgtr_stop() {
+                document.getElementById('dgtr_image').style.opacity = "0";
+              }
+              dgtr_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+              <span class="papertitle">Dexterous Grasp Tranformer</span>
+            <br>
+            Guohao Xu*,
+            <strong>Yi-Lin Wei*</strong>,
+            <a href="https://zhengdian1.github.io/">Dian Zheng</a>,
+            <a href="https://dravenalg.github.io/">Xiao-Ming Wu</a>,
+            <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>
+            <br>
+            <p></p>
+            <em>CVPR</em>, 2024
+            <br>
+            <a href="https://arxiv.org/abs/2404.18135">arXiv page</a>
+            /
+            <a href="https://isee-laboratory.github.io/dgtr/">project page</a>
+            /
+            <a href="https://github.com/iSEE-Laboratory/DGTR">code</a>
+            <p></p>
+            <p>
+            A novel discriminative framework for dexterous grasp generation by formulating it as a set prediction task.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+            <td style="padding:20px;width:32%;vertical-align:top">
+                <div class="one">
+                    <div class="two" id='taccap_image'>
+                        <img src='images/taccap_image.png' width="150%">
+                    </div>
+                </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+                <span class="papertitle">TacCap: A Wearable FBG-Based Tactile Sensor for Seamless Human-to-Robot Skill Transfer</span>
+                <br>
+                <a href="https://chengyi-xing.com/">Chengyi Xing*</a>,
+                <a href="https://haolirobo.github.io/">Hao Li*</a>,
+                <strong>Yi-Lin Wei</strong>,
+                Tian-Ao Ren, 
+                Tianyu Tu, 
+                Yuhao Lin, 
+                Elizabeth Schumann, 
+                <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>,
+                <a href="https://profiles.stanford.edu/mark-cutkosky">Mark Cutkosky</a>,
+                <br>
+                <p></p>
+                <em>IROS</em>, 2025
+                <br>
+                <a href="https://arxiv.org/abs/2503.01789">arXiv page</a>
+                /
+                <a href="https://sites.google.com/stanford.edu/TacCap">Project page</a>
+                <p></p>
+                <p>
+                    A wearable FBG-Based tactile sensor which can transfered form human to robot.
+                </p>
+            </td>
+        </tr>
+            
+        <tr>
+              <td style="padding:20px;width:32%;vertical-align:top">
+                  <div class="one">
+                      <div class="two" id='chainhoi_image'>
+                          <img src='images/chainhoi_image.png' width="150%">
+                      </div>
+                  </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                  <span class="papertitle">ChainHOI: Joint-based Kinematic Chain Modeling for Human-Object Interaction Generation</span>
+                  <br>
+                  <a href="https://www.lingan.art/">Liang-An Zeng*</a>,
+                  Guo-Hong Huang*,
+                  <strong>Yi-Lin Wei</strong>,
+                  Shengbo Gu, 
+                  <a href="https://scholar.google.com/citations?user=IvOMpGkAAAAJ/">Yu-Ming Tang</a>,
+                  <a href="https://scholar.google.com/citations?user=0ee541wAAAAJ&hl=zh-CN/">Jingke Meng#</a>,
+                  <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng#</a>
+                  <br>
+                  <p></p>
+                  <em>CVPR</em>, 2025
+                  <br> 
+                  <a href="https://arxiv.org/abs/2503.13130">arXiv page</a>
+                  <p></p>
+                  <p>
+                      Human-Object interaction generation by joint-based kinematic chain modeling
+                  </p>
+              </td>
+          </tr>
+
+        <tr onmouseout="s2hg_stop()" onmouseover="s2hg_start()">
+          <td style="padding:20px;width:32%;vertical-align:top">
+            <div class="one">
+              <div class="two" id='s2hg_image'><video  width=150% muted autoplay loop>
+              <source src="images/s2hg.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/s2hg.png' width=150%>
+            </div>
+            <script type="text/javascript">
+              function s2hg_start() {
+                document.getElementById('s2hg_image').style.opacity = "1";
+              }
+      
+              function s2hg_stop() {
+                document.getElementById('s2hg_image').style.opacity = "0";
+              }
+              s2hg_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+              <span class="papertitle">Single-view Scene Point Cloud Human Grasp Generation</span>
+            <br>
+            Yan-Kang Wang,
+            <a href="https://scholar.google.com/citations?user=BglGZXEAAAAJ&hl=en&oi=ao/">Chengyi Xing</a>,
+            <strong>Yi-Lin Wei</strong>,
+            <a href="https://dravenalg.github.io/">Xiao-Ming Wu</a>,
+            <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>
+            <br>
+            <p></p>
+            <em>CVPR</em>, 2024
+            <br>
+            <a href="https://arxiv.org/abs/2404.15815">arXiv page</a>
+            <p></p>
+            <p>
+            A novel task of generating human grasps based on single-view scene point clouds.
+            </p>
+              </td>
+          </tr>
+
+        <tr>
+              <td style="padding:20px;width:32%;vertical-align:top">
+                  <div class="one">
+                      <div class="two" id='imanip_image'>
+                          <img src='images/imanip_image.png' width="150%">
+                      </div>
+                  </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                  <span class="papertitle">iManip: Skill-Incremental Learning for Robotic Manipulation</span>
+                  <br>
+                  Zexin Zheng,
+                  Jia-Feng Cai
+                  <a href="https://dravenalg.github.io/">Xiao-Ming Wu</a>,
+                  <strong>Yi-Lin Wei</strong>,
+                  <a href="https://scholar.google.com/citations?user=IvOMpGkAAAAJ/">Yu-Ming Tang</a>,
+                  <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng#</a>
+                  <br>
+                  <p></p>
+                  <em>ICCV</em>, 2025
+                  <br>
+                  <a href="https://arxiv.org/pdf/2503.07087">arXiv page</a>
+                  <p></p>
+                  <p>
+                  Endow the robots with the ability to learn new manipulation skills based on the previous learned knowledge without re-training.
+                  </p>
+              </td>
+          </tr>
+
+        <tr>
+              <td style="padding:20px;width:32%;vertical-align:top">
+                  <div class="one">
+                      <div class="two" id='DIF_image'>
+                          <img src='images/DIF.png' width="150%">
+                      </div>
+                  </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                  <span class="papertitle">Rethinking Bimanual Robotic Manipulation: Learning with Decoupled Interaction Framework.</span>
+                  <br>
+                  <a href="https://jianjian-jiang.github.io/">Jian-Jian Jiang</a>,
+                  <a href="https://dravenalg.github.io/">Xiao-Ming Wu</a>,
+                  Yi-Xiang He,
+                  <a href="https://www.lingan.art/">Liang-An Zeng</a>,
+                  <strong>Yi-Lin Wei</strong>,
+                  <a href="https://profiles.imperial.ac.uk/d.zhang17">Dandan Zhang</a>,
+                  <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>
+                  <br>
+                  <p></p>
+                  <em>ICCV</em>, 2025
+                  <br>
+                  <a href="https://arxiv.org/pdf/2503.07087">arXiv page</a>
+                  <p></p>
+                  <p>
+                  A decoupled interaction framework that categorizes bimanual manipulation tasks into non-collaborative and collaborative types, and performs both effectively.
+                  </p>
+              </td>
+          </tr>
+
+        <tr>
+          <!-- <td style="padding: 20px; width:32%;vertical-align:top">
+                <img src="images/real2sim.png" alt="PontTuset" width="160" style="border-style: none">
+          </td>
+          </td> -->
+          <td style="padding:20px;width:32%;vertical-align:top">
+              <div class="one">
+                  <div class="two" id='real2sim_image'>
+                      <img src='images/real2sim.png' width="150%">
+                  </div>
+              </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+              <span class="papertitle">Real-to-Sim Grasp: Rethinking the Gap between Simulation and Real World in Grasp Detection</span>
+            <br>
+            Jia-Feng Cai </a>,
+            <a href="https://github.com/rhett-chen/">Zi-Bo Chen</a>,
+            <a href="https://dravenalg.github.io/">Xiao-Ming Wu</a>,
+            <a href="https://jianjian-jiang.github.io/">Jian-Jian Jiang</a>,
+            <strong>Yi-Lin Wei</strong>,
+            <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>
+            <br>
+            <p></p>
+            <em>CoRL</em>, 2024
+            <br>
+            <a href="https://openreview.net/pdf?id=uJBMZ6S02T">paper page</a>
+            /
+            <a href="https://isee-laboratory.github.io/R2SGrasp/">project page</a>
+            <p></p>
+            <p>
+            A new Real-to-Sim framework for 6-DoF Grasp detection, with the key insight of bridging sim-to-real gap in a real-to-sim way.
+          </td>
+        </tr>
+              
+        <tr>
+          <td style="padding: 20px; width:32%;vertical-align:top">
+                <img src="images/EconomicGrasp.png" alt="PontTuset" width="240" style="border-style: none">
+          </td>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+              <span class="papertitle">An Economic Framework for 6-DoF Grasp Detection</span>
+            <br>
+            <a href="https://dravenalg.github.io/">Xiao-Ming Wu*</a>,
+            Jia-Feng Cai*,
+            <a href="https://jianjian-jiang.github.io/">Jian-Jian Jiang</a>
+            <a href="https://zhengdian1.github.io/">Dian Zheng</a>,
+            <strong>Yi-Lin Wei</strong>,
+            <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>
+            <br>
+            <p></p>
+            <em>ECCV</em>, 2024
+            <br>
+            <a href="https://arxiv.org/abs/2407.08366">arXiv page</a>
+            /
+            <a href="https://github.com/iSEE-Laboratory/EconomicGrasp">code</a>
+            <p></p>
+            <p>
+            A new economic grasping framework for 6-DoF grasp detection to economize the training resource cost and meanwhile maintain effective grasp performance.
+            </p>
+          </td>
+        </tr>
+      
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Academic Services</h2>
+                <p>
+                  Reviewer for CVPR 2025, ICCV 2025, NeurIPS 2024/2025, ICML 2025, ICLR 2025/2026.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td style="padding:0px">
+                  <br>
+                  <p style="text-align:right;font-size:small;">
+                    <a href="https://github.com/jonbarron/jonbarron_website">Template from Jon Barron's website</a>
+                  </p>
+                </td>
+                <td style="text-align:right;">
+                  <!-- <td style="padding:300px;width:15%;vertical-align:middle"> -->
+                  <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=2NmscI4iZxxfuoDbbJvZzjVOT14kVLh72R9xOD8Ww8g"></script>
+                </td>
+              </tr>
+        </tbody></table>
+      </table>
+</body>
+
+</html>
