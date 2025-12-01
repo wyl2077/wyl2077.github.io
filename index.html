@@ -63,7 +63,56 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+          <tr onmouseout="cyclemanip_stop()" onmouseover="cyclemanip_start()">
+              
+            <td style="padding:20px;width:32%;vertical-align:top; background-color: rgb(255, 255, 208);">
+              <div class="one">
+                <br>
+                <div class="two" id='cyclemanip_image'><video  width=150% muted autoplay loop>
+                <source src="images/cyclemanip.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/cyclemanip.png' width=150%>
+              </div>
+              <script type="text/javascript">
+                function cyclemanip_start() {
+                  document.getElementById('cyclemanip_image').style.opacity = "1";
+                }
         
+                function cyclemanip_stop() {
+                  document.getElementById('cyclemanip_image').style.opacity = "0";
+                }
+                cyclemanip_stop()
+              </script>
+            </td>
+              <td style="padding:20px;width:75%;vertical-align:top; background-color: rgb(255, 255, 208);">
+                  <span class="papertitle">CycleManip: Enabling Cycle-based Manipulation via Effective History Perception and Understanding</span>
+                  <br>
+                  <strong>Yi-Lin Wei*</strong>,
+                  Haoran Liao*,
+                  Yuhao Lin,
+                  Pengyue Wang,
+                  Zhizhao Liang,
+                  <a href="https://guiliang.me/">Guiliang Liu</a>,
+                  <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>
+                  <br>
+                  <p></p>
+                  <em>under review</em>, 2025
+                  <br>
+                  <a href="https://arxiv.org/abs/">arXiv page</a>
+                  /
+                  <a href="https://isee-laboratory.github.io/CycleManip/">project page</a>
+                  /
+                  code
+                  <p></p>
+                  <p>
+                  Achieving cyclic manipulation tasks in an end-to-end imitation manner, without relying on auxiliary models or incurring heavy computational overhead.
+                  </p>
+              </td>
+          </tr>
+
           <tr onmouseout="omnidex_stop()" onmouseover="omnidex_start()">
               
             <td style="padding:20px;width:32%;vertical-align:top; background-color: rgb(255, 255, 208);">
