@@ -69,6 +69,7 @@
             <div class="news-panel">
               <div class="news-scroll-container">
                 <ul class="news-list">
+                  <li class="news-item"><span class="news-date">[2026-04]</span> One paper accepted in RSS 2026.</li>
                   <li class="news-item"><span class="news-date">[2026-02]</span> Two papers accepted in CVPR 2026.</li>
                   <li class="news-item"><span class="news-date">[2026-01]</span> One paper accepted in ICRA 2026.</li>
                   <li class="news-item"><span class="news-date">[2025-12]</span> One paper accepted in Neurocomputing.</li>
@@ -99,6 +100,40 @@
             <div class="publication-wrap">
               <table class="publication-table scrollable-table">
                 <tbody>
+                  <tr class="pub-row" onmouseout="dexgraspzero_stop()" onmouseover="dexgraspzero_start()">
+                    <td class="pub-media">
+                      <div class="media-frame one">
+                        <div class="two" id="dexgraspzero_image">
+                          <video class="pub-video" muted autoplay loop playsinline>
+                            <source src="images/dexgraspzero.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                        <img class="pub-figure" src="images/dexgrasp-zero.png" alt="DexGrasp-Zero preview">
+                      </div>
+                      <script type="text/javascript">
+                        function dexgraspzero_start() {
+                          document.getElementById('dexgraspzero_image').style.opacity = "1";
+                        }
+                        function dexgraspzero_stop() {
+                          document.getElementById('dexgraspzero_image').style.opacity = "0";
+                        }
+                        dexgraspzero_stop()
+                      </script>
+                    </td>
+                    <td class="pub-content">
+                      <span class="papertitle">DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cross-Embodiment Dexterous Grasping</span>
+                      <div class="pub-authors">Yuliang Wu, Yanhan Lin, WengKit Lao, Yuhao Lin, <strong>Yi-Lin Wei</strong>, <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a>, Ancong Wu†</div>
+                      <div class="pub-meta"><em>RSS</em>, 2026</div>
+                      <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2603.16806">arXiv page</a>
+                        <span class="divider">/</span>
+                        <a href="https://yliangwu.github.io/DexGrasp-Zero">project page</a>
+                      </div>
+                      <div class="pub-summary">A morphology-aligned graph convolutional policy that learns universal dexterous grasping from diverse embodiments, enabling zero-shot transfer to unseen robot hands with 85% success rate.</div>
+                    </td>
+                  </tr>
+
                   <tr class="pub-row highlighted" onmouseout="bidexgrasp_stop()" onmouseover="bidexgrasp_start()">
                     <td class="pub-media">
                       <div class="media-frame one">
@@ -129,6 +164,40 @@
                         <a href="https://frenkielm.github.io/BiDexGrasp.github.io/">Code and Dataset(coming soon)</a>
                       </div>
                       <div class="pub-summary">A large-scale bimanual dexterous grasping dataset and a geometry-size-adaptive grasping generation model.</div>
+                    </td>
+                  </tr>
+
+                  <tr class="pub-row" onmouseout="revip_stop()" onmouseover="revip_start()">
+                    <td class="pub-media">
+                      <div class="media-frame one">
+                        <div class="two" id="revip_image">
+                          <video class="pub-video" muted autoplay loop playsinline>
+                            <source src="images/revip.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                        <img class="pub-figure" src="images/revip.png" alt="ReViP preview">
+                      </div>
+                      <script type="text/javascript">
+                        function revip_start() {
+                          document.getElementById('revip_image').style.opacity = "1";
+                        }
+                        function revip_stop() {
+                          document.getElementById('revip_image').style.opacity = "0";
+                        }
+                        revip_stop()
+                      </script>
+                    </td>
+                    <td class="pub-content">
+                      <span class="papertitle">ReViP: Mitigating False Completion in Vision-Language-Action Models with Vision-Proprioception Rebalance</span>
+                      <div class="pub-authors">Zhuohao Li, Yinghao Li, <a href="https://jianjian-jiang.github.io/">Jian-Jian Jiang</a>, Lang Zhou, Tianyu Zhang, Jiadong Yin, <a href="https://frenkielm.github.io/">Mu Lin</a>, <strong>Yi-Lin Wei</strong>, <a href="https://www.isee-ai.cn/~zhwshi/">Wei-Shi Zheng</a></div>
+                      <div class="pub-meta"><em>Arxiv</em>, 2026</div>
+                      <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2601.16667">arXiv page</a>
+                        <span class="divider">/</span>
+                        <a href="https://isee-laboratory.github.io/ReViP/">project page</a>
+                      </div>
+                      <div class="pub-summary">Mitigating false task completion in VLA models by rebalancing vision and proprioception signals.</div>
                     </td>
                   </tr>
 
