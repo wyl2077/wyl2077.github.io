@@ -148,19 +148,20 @@ h1 {
 }
 .profile-photo-link {
   grid-column: 2;
-  grid-row: 1 / 4;
-  align-self: start;
-  margin-top: 20px;
+  grid-row: 2;
+  align-self: center;
 }
 .profile-photo {
   display: block;
   width: 190px;
-  height: 214px;
+  height: auto;
+  aspect-ratio: 1;
   object-fit: cover;
   border-radius: 3px;
 }
 .profile-bio {
   grid-column: 1;
+  align-self: center;
 }
 .profile-bio em {
   color: var(--accent);
@@ -575,11 +576,9 @@ h2::after {
   }
   .profile-photo-link {
     grid-row: 1;
-    margin-top: 0;
   }
   .profile-photo {
     width: 112px;
-    height: 135px;
   }
   .profile-bio {
     grid-column: 1 / -1;
@@ -648,7 +647,6 @@ h2::after {
   }
   .profile-photo {
     width: 98px;
-    height: 124px;
   }
   .news-list li {
     grid-template-columns: 66px minmax(0, 1fr);
