@@ -19,6 +19,13 @@
     status.textContent = `${count} ${selected ? "selected" : "total"} publications`;
   });
 
+  document.querySelectorAll('.news-list a[href^="#paper-"]').forEach((link) => {
+    link.addEventListener("click", () => {
+      const paper = document.getElementById(link.hash.slice(1));
+      if (paper && paper.hidden) filter.querySelector('[data-filter="all"]').click();
+    });
+  });
+
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
   const stopPreviews = new Map();
   const visibilityObserver = new IntersectionObserver((entries) => {
